@@ -6,7 +6,7 @@ import (
 
 // TODO: add documentation
 
-func extractRequest(v interface{}, getter StringGetter, tag string) error {
+func Extract(v interface{}, getter StringGetter, tag string) error {
 
 	if reflect.TypeOf(v).Kind() != reflect.Ptr {
 		return ErrNotPointer
