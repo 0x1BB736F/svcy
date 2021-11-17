@@ -44,3 +44,8 @@ func assignFloat(v string, field reflect.Value) error {
 	field.SetFloat(floatValue)
 	return nil
 }
+
+func assignString(v string, field reflect.Value) error {
+	field.SetString(v)
+	return nil
+}
