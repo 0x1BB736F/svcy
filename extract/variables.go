@@ -3,6 +3,8 @@ package extract
 import "reflect"
 
 var assignMap = map[reflect.Kind](func(string, reflect.Value) error){
+	reflect.String: assignString,
+	
 	reflect.Int:   assignInt,
 	reflect.Int64: assignInt,
 	reflect.Int32: assignInt,
